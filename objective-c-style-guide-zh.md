@@ -360,15 +360,15 @@ NSNumber *buildingStreetNumber = [NSNumber numberWithInteger:10018];
 **推荐:**
 
 ```objc
-static NSString * const RWTAboutViewControllerCompanyName = @"RayWenderlich.com";
+static NSString * const MGSAboutViewControllerCompanyName = @"meigesir.com";
 
-static CGFloat const RWTImageThumbnailHeight = 50.0;
+static CGFloat const MGSImageThumbnailHeight = 50.0;
 ```
 
 **不推荐:**
 
 ```objc
-#define CompanyName @"RayWenderlich.com"
+#define CompanyName @"meigesir.com"
 
 #define thumbnailHeight 2
 ```
@@ -382,21 +382,21 @@ static CGFloat const RWTImageThumbnailHeight = 50.0;
 **例如:**
 
 ```objc
-typedef NS_ENUM(NSInteger, RWTLeftMenuTopItemType) {
-  RWTLeftMenuTopItemMain,
-  RWTLeftMenuTopItemShows,
-  RWTLeftMenuTopItemSchedule
+typedef NS_ENUM(NSInteger, MGSLeftMenuTopItemType) {
+  MGSLeftMenuTopItemMain,
+  MGSLeftMenuTopItemShows,
+  MGSLeftMenuTopItemSchedule
 };
 ```
 
 你也可以显示地赋值(展示旧的k-style常量定义):
 
 ```objc
-typedef NS_ENUM(NSInteger, RWTGlobalConstants) {
-  RWTPinSizeMin = 1,
-  RWTPinSizeMax = 5,
-  RWTPinCountMin = 100,
-  RWTPinCountMax = 500,
+typedef NS_ENUM(NSInteger, MGSGlobalConstants) {
+  MGSPinSizeMin = 1,
+  MGSPinSizeMax = 5,
+  MGSPinCountMin = 100,
+  MGSPinCountMax = 500,
 };
 ```
 
@@ -456,16 +456,16 @@ switch (condition) {
 当在switch使用枚举类型时，'default'是不需要的。例如：
 
 ```objc
-RWTLeftMenuTopItemType menuType = RWTLeftMenuTopItemMain;
+MGSLeftMenuTopItemType menuType = MGSLeftMenuTopItemMain;
 
 switch (menuType) {
-  case RWTLeftMenuTopItemMain:
+  case MGSLeftMenuTopItemMain:
     // ...
     break;
-  case RWTLeftMenuTopItemShows:
+  case MGSLeftMenuTopItemShows:
     // ...
     break;
-  case RWTLeftMenuTopItemSchedule:
+  case MGSLeftMenuTopItemSchedule:
     // ...
     break;
 }
