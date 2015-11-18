@@ -451,7 +451,8 @@ switch (condition) {
 
 When using an enumerated type for a switch, 'default' is not needed.   For example:
 
-```objc MGSLeftMenuTopItemType menuType = MGSLeftMenuTopItemMain;
+```objc 
+MGSLeftMenuTopItemType menuType = MGSLeftMenuTopItemMain;
 
 switch (menuType) {
   case MGSLeftMenuTopItemMain:
